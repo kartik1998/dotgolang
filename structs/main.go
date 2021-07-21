@@ -22,5 +22,14 @@ func main() {
 	// fmt.Printf("%+v", alex)
 
 	jim := person{firstname: "Jim", lastname: "Halls", contact: contactInfo{email: "jim@gmail.com", zipCode: 95347}}
-	fmt.Printf("%+v", jim)
+	jim.updateFirstName("jimmy")
+	jim.print()
+}
+
+func (p *person) updateFirstName(name string) {
+	p.firstname = name
+}
+
+func (p person) print() {
+	fmt.Printf("%+v", p)
 }
