@@ -1,0 +1,3 @@
+[submodule "gocards"]
+	path = gocards
+	url = git@github.com:kartik1998/gocards.git
